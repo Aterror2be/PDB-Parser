@@ -9,9 +9,47 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Header Files\DIA SDK">
+      <UniqueIdentifier>{aeba9fab-2ba7-4ccc-9791-aae4c62f5fcf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\DIA SDK\include">
+      <UniqueIdentifier>{4db25109-43af-41c0-9e54-4fb56af91271}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DIA SDK\lib">
+      <UniqueIdentifier>{6c096960-8909-4f3a-bc22-e19c89c1cd59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DIA SDK\lib\amd64">
+      <UniqueIdentifier>{ea7f595b-e9c9-4ae2-8016-167fecb4c85b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source Files\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Header Files\Pdb.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header Files\Pdb.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header Files\DIA SDK\include\cvconst.h">
+      <Filter>Header Files\DIA SDK\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Header Files\DIA SDK\include\dia2.h">
+      <Filter>Header Files\DIA SDK\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Header Files\DIA SDK\include\diacreate.h">
+      <Filter>Header Files\DIA SDK\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Header Files\DIA SDK\lib\diaguids.lib">
+      <Filter>Header Files\DIA SDK\lib</Filter>
+    </Library>
+    <Library Include="Header Files\DIA SDK\lib\amd64\diaguids.lib">
+      <Filter>Header Files\DIA SDK\lib\amd64</Filter>
+    </Library>
   </ItemGroup>
 </Project>

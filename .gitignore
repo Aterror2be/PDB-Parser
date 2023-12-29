@@ -35,3 +35,11 @@
 *.db-shm
 *.db
 *.vsidx
+*.ipch
+.vs/PDB-Profiler/v17/.suo
+*.tlog
+*.idb
+*.pdb
+*.log
+*.ilk
+*.recipe
