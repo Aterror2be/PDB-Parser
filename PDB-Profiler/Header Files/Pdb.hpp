@@ -55,6 +55,7 @@ public:
 private:
 	const wchar_t* GetBasicTypeString(unsigned long base_type);
 	const wchar_t* GuessTypeBySize(unsigned long type_size);
+	std::string WideCharToUtf8(const wchar_t* wide_str);
 
 	IDiaDataSource* dia_data_source;
 	IDiaSession* dia_session;
