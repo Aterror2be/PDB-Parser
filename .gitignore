@@ -43,3 +43,5 @@
 *.log
 *.ilk
 *.recipe
+*.iobj
+*.ipdb

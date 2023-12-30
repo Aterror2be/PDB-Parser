@@ -10,16 +10,7 @@
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
     <Filter Include="Header Files\DIA SDK">
-      <UniqueIdentifier>{aeba9fab-2ba7-4ccc-9791-aae4c62f5fcf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\DIA SDK\include">
-      <UniqueIdentifier>{4db25109-43af-41c0-9e54-4fb56af91271}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\DIA SDK\lib">
-      <UniqueIdentifier>{6c096960-8909-4f3a-bc22-e19c89c1cd59}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\DIA SDK\lib\amd64">
-      <UniqueIdentifier>{ea7f595b-e9c9-4ae2-8016-167fecb4c85b}</UniqueIdentifier>
+      <UniqueIdentifier>{391d0e7b-61b7-44e3-a449-952eb0b418f6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -29,27 +20,22 @@
     <ClCompile Include="Header Files\Pdb.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="Header Files\DIA SDK\diacreate.cpp">
+      <Filter>Header Files\DIA SDK</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header Files\Pdb.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\DIA SDK\include\cvconst.h">
-      <Filter>Header Files\DIA SDK\include</Filter>
+    <ClInclude Include="Header Files\DIA SDK\cvconst.h">
+      <Filter>Header Files\DIA SDK</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\DIA SDK\include\dia2.h">
-      <Filter>Header Files\DIA SDK\include</Filter>
+    <ClInclude Include="Header Files\DIA SDK\dia2.h">
+      <Filter>Header Files\DIA SDK</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\DIA SDK\include\diacreate.h">
-      <Filter>Header Files\DIA SDK\include</Filter>
+    <ClInclude Include="Header Files\DIA SDK\diacreate.h">
+      <Filter>Header Files\DIA SDK</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="Header Files\DIA SDK\lib\diaguids.lib">
-      <Filter>Header Files\DIA SDK\lib</Filter>
-    </Library>
-    <Library Include="Header Files\DIA SDK\lib\amd64\diaguids.lib">
-      <Filter>Header Files\DIA SDK\lib\amd64</Filter>
-    </Library>
   </ItemGroup>
 </Project>

@@ -119,28 +119,26 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)/Source Files;$(ProjectDir)/Header Files;$(ProjectDir)/Header Files\DIA SDK\bin;$(ProjectDir)/Header Files\DIA SDK\bin\arm;$(ProjectDir)/Header Files\DIA SDK\bin\arm64;$(ProjectDir)/Header Files\DIA SDK\bin\amd64;$(ProjectDir)/Header Files\DIA SDK\idl;$(ProjectDir)/Header Files\DIA SDK\include;$(ProjectDir)/Header Files\DIA SDK\lib;$(ProjectDir)/Header Files\DIA SDK\lib\amd64;$(ProjectDir)/Header Files\DIA SDK\lib\arm;$(ProjectDir)/Header Files\DIA SDK\lib\arm64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)/Source Files;$(ProjectDir)/Header Files;$(ProjectDir)/Header Files/DIA SDK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Header Files\DIA SDK\diacreate.cpp" />
     <ClCompile Include="Header Files\Pdb.cpp" />
     <ClCompile Include="Source Files\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header Files\DIA SDK\include\cvconst.h" />
-    <ClInclude Include="Header Files\DIA SDK\include\dia2.h" />
-    <ClInclude Include="Header Files\DIA SDK\include\diacreate.h" />
+    <ClInclude Include="Header Files\DIA SDK\cvconst.h" />
+    <ClInclude Include="Header Files\DIA SDK\dia2.h" />
+    <ClInclude Include="Header Files\DIA SDK\diacreate.h" />
     <ClInclude Include="Header Files\Pdb.hpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="Header Files\DIA SDK\lib\amd64\diaguids.lib" />
-    <Library Include="Header Files\DIA SDK\lib\diaguids.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
