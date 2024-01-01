@@ -16,7 +16,7 @@ struct EnumData
 {
 	std::string name;
 	std::string type;
-	std::vector<EnumMember> members;
+	std::unordered_map<std::string, EnumMember> members;
 };
 
 struct StructMember
@@ -30,7 +30,7 @@ struct StructData
 {
 	std::string name;
 	unsigned long long size;
-	std::vector<StructMember> fields;
+	std::unordered_map<std::string, StructMember> fields;
 };
 
 struct GlobalData

@@ -149,7 +149,7 @@ std::unordered_map<std::string, EnumData> PdbParser::GetEnumData()
 			enum_member.value = value.lVal;
 
 			//add data to members list
-			enum_data.members.push_back(enum_member);
+			enum_data.members.insert({ enum_member.name, enum_member });
 
 			VariantClear(&value);
 			SysFreeString(child_name);
@@ -279,7 +279,7 @@ std::unordered_map<std::string, StructData> PdbParser::GetStructData()
 			struct_member.type = WideCharToUtf8(member_type_str);
 			struct_member.offset = member_offset;
 
-			struct_data.fields.push_back(struct_member);
+			struct_data.fields.insert({ struct_member.name, struct_member });
 
 			if(member_name != nullptr)
 				SysFreeString(member_name);
